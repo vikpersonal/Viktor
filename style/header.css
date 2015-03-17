@@ -1,0 +1,36 @@
+/*header*/
+
+.header {
+	background-color: #eff3f7;
+	padding-top: 10px;
+	margin-bottom: 25px;
+}
+
+.social {
+	float: right;
+	margin-left: -50px;
+}
+.social__btn {
+	float: left;
+	margin-left: 50px;
+}
+.social__link {
+	display: block;
+    width: 47px;
+    height: 47px;
+    background: url(../image/sprites.png) 0 0 no-repeat;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+}
+.social__vk {
+	background-position: -2px -150px;
+}
+.social__vk:hover {
+	background-position: -2px -2px;
+}
+.social__git {
+	background-position: -149px -150px
+}
+.social__git:hover {
+	background-position: -149px -2px;
+}

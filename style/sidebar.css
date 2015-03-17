@@ -1,0 +1,60 @@
+.sidebar {
+	float: left;
+	width: 250px;
+}
+/*============*/
+/*меню sidebar*/
+#menu-sidebar {
+	background-color: #eff3f7;
+	border-radius: 5px;
+	margin-bottom: 25px;
+	font-size: 22px;
+	line-height: 3;
+}
+#menu-sidebar li {
+	padding: 0 10px;
+}
+#menu-sidebar li a {
+	display: block;
+	border-bottom: 2px solid #3ba8c0;
+	padding: 0 10px;
+}
+#menu-sidebar li:last-child a {
+	border-bottom: 0;
+}
+/*========*/
+/*контакты*/
+.contacts {
+	color: #fff;
+	margin-bottom: 25px;
+}
+.contacts__li {
+	padding: 0 10px;
+	line-height: 2;
+}
+.contacts__li:first-child {
+	border-radius: 5px 5px 0 0;
+}
+.contacts__li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+.contacts__link {
+	color: #fff;
+	padding: 0 0 0 30px;
+}
+.contacts__link:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.contacts-title {
+	background-color: #3ba8c0;
+}
+.contacts-mail {
+	background: url(../image/mail.png) 10px 8px no-repeat #41b9d4;
+}
+.contacts-phone {
+	background: url(../image/phone.png) 10px 5px no-repeat #48cbe8;
+}
+.contacts-skype {
+	background: url(../image/skype.png) 10px 6px no-repeat #51daf8;
+}

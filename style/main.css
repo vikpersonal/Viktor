@@ -1,0 +1,232 @@
+@import url(normalize.css);
+@import url(header.css);
+@import url(sidebar.css);
+@import url(footer.css);
+@import url(font.css);
+@import url(comments.css);
+
+/*clearfix*/
+.wrapper:after, footer:after, #searchform, .content-wrapper:after {
+    content: " ";
+    display: table; 
+    clear: both;
+}
+/*/clearfix*/
+/*wrapper содержимого header и footer*/
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+/*/wrapper содержимого header и footer*/
+/*wrapper содержимого страниц*/
+.content-wrapper {
+	width: 90%;
+	max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+/*/wrapper содержимого страниц*/
+/*Прижатие footer к низу страницы, вариант с -margin*/
+html, body {
+  height: 100%;
+}
+input {
+  border: 1px solid #3ba8c0;
+  border-radius: 5px;
+  padding: 2px 5px;
+    height: 25px;
+}
+input:focus {
+  outline: 1px solid #3ba8c0;
+}
+textarea {
+  border: 1px solid #3ba8c0;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+textarea:focus {
+  outline: 1px solid #3ba8c0;
+}
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -80px; 
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+	height: 80px;
+}
+/*/Прижатие footer к низу страницы, вариант с -margin*/
+/*Логотип*/
+.logo {
+  display: block;
+  float: left;
+  font-family: mothproofscriptregular;
+  font-size: 50px;
+}
+/*/Логотип*/
+
+/*Линия под header и над footer*/
+.gradient-line {
+  /*Просто захотелось так реализовать, IE8 простые градиенты понимает а если больше 2 точек то нет*/
+    margin: 0 auto;
+    width: 95%;
+    max-width: 1400px;
+}
+.gradient-line:after {
+  content: " ";
+    display: table; 
+    clear: both;
+}
+.line-left, .line-right {
+    height: 5px;
+    width: 50%;
+}
+.line-left {
+  float: left;
+    background: #eff3f7; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZjNmNyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZDY2N2EiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  #eff3f7 0%, #1d667a 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#eff3f7), color-stop(100%,#1d667a)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #eff3f7 0%,#1d667a 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #eff3f7 0%,#1d667a 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #eff3f7 0%,#1d667a 100%); /* IE10+ */
+    background: linear-gradient(to right,  #eff3f7 0%,#1d667a 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff3f7', endColorstr='#1d667a',GradientType=1 ); /* IE6-8 */
+}
+.line-right {
+  float: right;
+    background: #1d667a; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFkNjY3YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZmYzZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(left,  #1d667a 0%, #eff3f7 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1d667a), color-stop(100%,#eff3f7)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #1d667a 0%,#eff3f7 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #1d667a 0%,#eff3f7 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #1d667a 0%,#eff3f7 100%); /* IE10+ */
+    background: linear-gradient(to right,  #1d667a 0%,#eff3f7 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d667a', endColorstr='#eff3f7',GradientType=1 ); /* IE6-8 */
+}
+/*/Линия под header и над footer */
+/*post*/
+.post {
+  margin: 0 0 25px 25px;
+  background-color: #eff3f7;
+  float: right;
+  width:  665px;
+  border-radius: 5px;
+  padding: 0 10px 10px 10px;
+}
+.post p {
+  padding: 10px
+}
+h1, h3 {
+  line-height: 3;
+  font-size: 22px;
+  color: #3ba8c0;
+  border-bottom: 2px solid #3ba8c0;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+/*/post*/
+/*pagination*/
+.page_pagination {
+  float: right;
+  width: 665px;
+  margin: 0 0 25px 25px;
+  padding: 10px;
+  background-color: #eff3f7;
+  border-radius: 5px;
+}
+.current {
+  color: #3ba8c0;
+  border-bottom: 2px solid #3ba8c0;
+  border-top: 2px solid #3ba8c0;
+}
+.screen-reader-text{
+  font-size: 22px;
+  color: #3ba8c0;
+  padding: 0 10px;
+  margin: 0 0 10px 0;
+}
+.nav-links {
+  padding: 0 5px;
+}
+.page-numbers {
+  padding: 0 5px;
+}
+/*/pagination*/
+/*pagination posts*/
+.previous_next_posts {
+  float: right;
+  width: 645px;
+  margin: 0 0 25px 25px;
+  padding: 20px;
+  background-color: #eff3f7;
+  border-radius: 5px;
+  color: #3ba8c0;
+  line-height: 1;
+}
+.previous_next_posts a {
+  display: block;
+}
+/*/pagination posts*/
+/*Поиск*/
+#searchform {
+  margin-bottom: 25px
+}
+.screen-reader-text {
+  display: none;
+}
+#s {
+  width: 166px;
+  padding-left: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+#searchsubmit, #s {
+  float: left;
+}
+#searchsubmit {
+  color: #fff;
+  height: 31px;
+  padding: 6px 10px;
+  background-color: #3ba8c0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+#searchsubmit:focus {
+  outline: none;}
+/*/Поиск*/
+/*logo авторизации*/
+.login h1 a {
+  background-image: none !important;
+}
+/*/logo авторизации*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

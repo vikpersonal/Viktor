@@ -1,0 +1,15 @@
+.footer {
+	background-color: #eff3f7;
+	height: 80px;
+}
+.log-in-out {
+	display: block;
+	float: right;
+	height: 32px;
+	width: 20px;
+	margin-top: 20px;
+	background: url(../image/log-in-out-ico.png) 0 0 no-repeat;
+}
+.log-in-out:hover {
+	background-position: -21px 0px;
+}
